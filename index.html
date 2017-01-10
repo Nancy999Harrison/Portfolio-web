@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Mon portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+
+    <!-- Custom styles for this template -->
+    <!--<link href="starter-template.css" rel="stylesheet">-->
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- ----<script src="../..assets/js/ie-emulation-modes-warning.js"></script>----->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- --------MY LINKS/css------------------------------------------------------------------------------------------------>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="animate.css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+
+
+
+    <!-- --------MY LINKS/js------------------------------------------------------------------------------------------------>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="css/index.css">
+
+
+    <!-- hover -->
+
+
+
+</head>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="150">
+
+
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+                <!----<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="true">---->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">Nancy
+                </a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#section1">À propos de moi</a></li>
+                        <li><a href="#section2">Ce que je fais</a></li>
+                        <li><a href="#section3">Compètences</a></li>
+                        <li><a href="#section4">Portfolio</a></li>
+                        <li><a href="#section5">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+    <!---------------------------------------------------HEADER/VIDÉO------------------------------------------>
+
+
+
+    <div class="hero">
+        <div class="hero-content">
+            <video preload="true" autoplay loop muted>
+                <source src="video/bokeh-02_1.mp4" type="video/mp4">
+                <source src="video/bokeh-02_1.mp4" type="video/ogg"> Your browser does not support HTML5 video.
+            </video>
+
+
+            <!---------------------------------------------------CANVAS------------------------------------------>
+            <div class="hero-text">
+                <canvas class="responsive" id="myCanvas" width="1300" height="1000">
+
+                </canvas>
+
+            </div>
+            <!-- end hero-text-->
+
+
+
+        </div>
+        <!--end hero content-->
+        <!------HEADER/fin--->
+    </div>
+
+
+    <!---------------------------------------------------ABOUT ME------------------------------------------>
+    <div id="section1" class="container-fluid">
+        <div class="row">
+            <h1 class="slideanim">À propos de moi</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="flip-3d">
+                        <div class="back">
+                            <img class="img-responsive " alt="photo profile" src="img/profile-moi.png">
+                        </div>
+                        <div class="front">
+                            <img id="profil" class="img-responsive " alt="photo de profile" src="img/woman_face_01.png">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-lg-push-2">
+                    <h3 class=" slideanim soustitre"><i class="fa fa-quote-left fa-2x fa-pull-left" aria-hidden="true"></i>
+                        I have 99 problems but DESIGN ain't one.<i class="fa fa-quote-right fa-2x fa-pull-right " aria-hidden="true"></i></h3>
+                    <p class="abtm slideanim">Salut, je m’appelle Nancy et je suis Web Designer! Je suis une grande passionnée du design et j’adore jouer avec les couleurs, formes et les espaces. En ayant déjà une formation en Infographie, le côté précision et technique est une chose naturel. Je cherche toujours à me surpassé en cherchent des nouvelles alternatives pour créer des design unique, attirant et fonctionnel. Aussi, je suis un fan de l’art Fractal, la photographie et du Motion Design. J’aime apprendre tout ce qui est créatif et artistique. </p>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-sm-4 col-lg-push-7 ">
+                    <button type="button" class="btn btn-info slideanim">C.V.
+                        <span class="glyphicon glyphicon-save"></span>
+                    </button>
+                </div>
+                <div class="col-lg-6 col-sm-4 ">
+                    <div class="text-center center-block media slideanim">
+                        <a href="https://www.facebook.com/French.Chocolaite/"><i id="social-fb2" class="fa fa-facebook-square fa-3x social"></i></a>
+
+                        <a href="https://www.linkedin.com/in/n-harrison-web-design"><i id="social-lk2" class="fa fa-linkedin-square fa-3x social"></i></a>
+
+                        <a href=""><i id="social-da2" class="fa fa-google-plus-square fa-3x  social"></i></a>
+
+                        <a href=" http://french-chocolaite.deviantart.com/"><i id="social-em2" class="fa fa-deviantart  fa-3x social"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-----ABOUT ME-/fin--->
+    </div>
+    <!----------------------------------------------bg parallax---------------------------------------------->
+
+    <div class="bgimg-1 container-fluid " id="section2">
+
+        <!-----------------------------------------------WHAT I CAN DO---------------------------------------------->
+        <!--<div id="section2" class="container-fluid ">-------->
+        <div class="row">
+            <h1 class="slideanim"><span style="color:#fff;">Ce que je fais</span></h1>
+        </div>
+        <div class="row">
+            <!-- Single Service Item -->
+            <article class=" col-lg-2 col-md-4 col-sm-6 col-xs-12  col-lg-offset-3">
+                <div class="service-block text-center slideanim">
+                    <div class="service-icon text-center ">
+                        <i class="fa fa-wordpress fa-5x"></i>
+                    </div>
+                    <h3>WordPress </h3>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <article class=" col-lg-2 col-md-4 col-sm-6 col-xs-12 ">
+                <div class="service-block text-center slideanim">
+                    <div class="service-icon text-center ">
+                        <i class="fa fa-desktop fa-5x"></i>
+                    </div>
+                    <h3> Design Responsive </h3>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <article class=" col-lg-2 col-md-4 col-sm-6 col-xs-12 ">
+                <div class="service-block text-center slideanim">
+                    <div class="service-icon text-center ">
+                        <i class="fa fa-play fa-5x"></i>
+                    </div>
+                    <h3>Audio &amp; Vidéo</h3>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+
+        </div>
+
+        <div class="row">
+            <!-- Single Service Item -->
+            <article class=" col-lg-2 col-md-4 col-sm-6 col-xs-12 col-lg-offset-3">
+                <div class="service-block text-center slideanim">
+                    <div class="service-icon text-center ">
+                        <i class="fa fa-eye fa-5x"></i>
+                    </div>
+                    <h3> Design Graphique</h3>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <article class=" col-lg-2 col-md-4 col-sm-6 col-xs-12 ">
+                <div class="service-block text-center slideanim">
+                    <div class="service-icon text-center">
+                        <i class="fa fa-android fa-5x"></i>
+                    </div>
+                    <h3>Application Mobile</h3>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+
+            <!-- Single Service Item -->
+            <article class=" col-lg-2 col-md-4 col-sm-6 col-xs-12 slideanim">
+                <div class="service-block text-center kill-margin-bottom">
+                    <div class="service-icon text-center">
+                        <i class="fa fa-link fa-5x"></i>
+                    </div>
+                    <h3>Bootstrap</h3>
+                </div>
+            </article>
+            <!-- End Single Service Item -->
+
+        </div>
+        <!-- End row -->
+    </div>
+
+    <!----------------------------------------------bg parallax---------------------------------------------->
+    <!------<div class="row">
+        <div class="bgimg-1 ">
+        </div>
+    </div>------->
+    <!----------------------------------------------skills-------------------------------------------->
+    <div id="section3" class="container-fluid ">
+        <div class="row">
+            <h1 class="slideanim">Compétences</h1></div>
+        <!-----------------------------------------------progress bar---------------------------------------------->
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-8 col-lg-offset-2 ">
+                    <!-- Skill Bars -->
+                    <h4>HTML5</h4>
+                    <div class="progress skill-bar sparkle ">
+                        <div class="progress-bar  
+                " role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill"><i class="val"></i></span>
+                        </div>
+                    </div>
+                    <h4>CSS3</h4>
+                    <div class="progress skill-bar sparkle">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill"><i class="val"></i></span>
+                        </div>
+                    </div>
+                    <h4>Wordpress</h4>
+                    <div class="progress skill-bar sparkle">
+
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill"><i class="val"></i></span>
+                        </div>
+                    </div>
+                    <h4>jQuery</h4>
+                    <div class="progress skill-bar sparkle">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill"><i class="val"></i></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!----skills/fin--->
+    </div>
+    <!----------------------------------------------bg parallax---------------------------------------------->
+    <div class="row">
+        <div class="bgimg-2">
+        </div>
+    </div>
+    <!--------------------------PORTFOLIO 1----------------------------------------------------------------------------------->
+    <div id="section4" class="container-fluid">
+        <div class="row">
+            <h1 class="slideanim">Portfolio</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 col-xs-12 col-sm-4 col-md-3  ">
+                    <div id="nav2">
+                        <ul class="simplefilter">
+                            <li class="active" data-filter="all">All &#47;</li>
+                            <li data-filter="1">Design Graphique&#47;</li>
+                            <li data-filter="2"> Web & Mobile &#47;</li>
+                            <li data-filter="3"> Atelier&#47;</li>
+                            <li data-filter="4">Audio-Vidéo &#47;</li>
+                            <li data-filter="5">Modélisation 3D &#47;</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-----------IMAGE GALLERY---------------------------------------------------------------->
+
+            <div class="row">
+                <div class="filtr-container">
+
+                    <!-----------IMAGE GALLERY-/1--------------------------->
+                    <div class="col-xs-12 col-sm-4 col-md-3  col-lg-4 filtr-item " data-category="2" data-sort="web">
+                        <figure class="snip0016">
+                            <img class=" img-responsive " alt="Web Design" src="img/les-papillons-grl.png">
+                            <figcaption>
+                                <h3>Les <br><span>Papillons</span></h3>
+                                <p>Design Web</p>
+                            </figcaption>
+                            <a href="remote1.html"></a>
+                        </figure>
+                    </div>
+
+                    <!---------------IMAGE GALLERY-/2--------------------------->
+                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4 filtr-item " data-category="1" data-sort="design">
+                        <figure class="snip0016">
+                            <img class="img-responsive " alt=" design" src="img/parc-techno-grl.png">
+                            <figcaption>
+                                <h3>Parc <br><span>Technologique</span></h3>
+                                <p>Design Graphique</p>
+
+                            </figcaption>
+                            <a href="remote2.html"></a>
+                        </figure>
+                    </div>
+
+
+                    <!-----------IMAGE GALLERY-/3--------------------------->
+                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4  filtr-item  " data-category="3" data-sort="arts">
+                        <figure class="snip0016">
+                            <img class="img-responsive " alt="arts" src="img/css-grl.png">
+                            <figcaption>
+                                <h3>CSS3<br><span>A - Z</span></h3>
+                                <p>Réalisation Web</p>
+                            </figcaption>
+                            <a href="remote3.html"></a>
+                        </figure>
+                    </div>
+
+                    <!-----------IMAGE GALLERY-/4--------------------------->
+
+                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4 filtr-item " data-category="4" data-sort="bokeh vidéo">
+                        <figure class="snip0016">
+                            <img class="img-responsive" alt="bokeh" src="img/trapcode-grl.png">
+                            <figcaption>
+                                <h3>Bokeh<br><span>Autres</span></h3>
+                                <p>Motion Design</p>
+                            </figcaption>
+                            <a href="remote4.html"></a>
+                        </figure>
+
+                    </div>
+                    <!-----------IMAGE GALLERY-/5--------------------------->
+                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4 filtr-item " data-category="1" data-sort="design">
+                        <figure class="snip0016">
+                            <img class="img-responsive" alt=" Design" src="img/iPad_peace-glry.png">
+                            <figcaption>
+                                <h3>Peace<br><span>Meccano</span></h3>
+                                <p>Design Graphique</p>
+                            </figcaption>
+                            <a href="remote5.html"></a>
+                        </figure>
+                    </div>
+
+                    <!-----------IMAGE GALLERY-/6--------------------------->
+
+                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4 filtr-item " data-category="5" data-sort="modélisation">
+                        <figure class="snip0016">
+                            <img class="img-responsive" alt="modélisation" src="img/room-3d-grl.png">
+                            <figcaption>
+                                <h3>Chambre<br><span>3D</span></h3>
+                                <p>Modélisation 3D</p>
+                            </figcaption>
+                            <a href="remote6.html"></a>
+                        </figure>
+                    </div>
+
+
+                    <!-----------IMAGE GALLERY--/7-------------------------->
+
+                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4  filtr-item " data-category="1" data-sort="design graphique">
+                        <figure class="snip0016">
+                            <img class=" img-responsive" alt="design graphique" src="img/branding-inspiration.png">
+                            <figcaption>
+                                <h3> Inspiration<br><span>Design</span></h3>
+                                <p>Design Graphique</p>
+                            </figcaption>
+                            <a href="remote7.html"></a>
+                        </figure>
+                    </div>
+
+
+                    <!-----------IMAGE GALLERY--/8-------------------------->
+
+                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4 filtr-item " data-category="2" data-sort="web design">
+                        <figure class="snip0016">
+                            <img class=" img-responsive" alt="web design" src="img/refonte-lego-grl.png">
+                            <figcaption>
+                                <h3>Refonte <br><span> Lego </span></h3>
+                                <p>Prototype Web</p>
+                            </figcaption>
+                            <a href="remote8.html"></a>
+                        </figure>
+                    </div>
+
+                    <!-----------IMAGE GALLERY--/9--------------------------->
+
+                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4  filtr-item" data-category="1" data-sort="design">
+                        <figure class="snip0016">
+                            <img class="img-responsive " alt="design" src="img/icon-meteo-grl.png">
+                            <figcaption>
+                                <h3>Icônes <br><span>Météo</span></h3>
+                                <p>Design Graphique</p>
+                            </figcaption>
+                            <a href="remote9.html"></a>
+                        </figure>
+                    </div>
+
+                    <!-- FIN/gallery -------------------------------------------------------->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-primary btn-md">Images à venir</button>
+                </div>
+            </div>
+        </div>
+        <!----container/fin--->
+
+        <!----portfolio/fin--->
+
+    </div>
+    <!------------------------bg--parallax------------------------------------------------------------------->
+    <div class="row">
+        <div class="bgimg-3 ">
+        </div>
+    </div>
+    <!-- --------------------------------Container (Contact Section) CONTACT---------------------------------->
+
+    <div id="section5" class="container-fluid ">
+        <h1 class="slideanim">Contact</h1>
+        <div class="row">
+            <div class="col-sm-2 col-sm-offset-2 slideanim">
+                <p>Laisser vos coordonnées</p>
+                <p><span class="glyphicon glyphicon-map-marker glyph"></span> Québec,Canada</p>
+                <p><span class="glyphicon glyphicon-phone glyph"></span> 581-777-7205</p>
+                <p><span class="glyphicon glyphicon-envelope glyph"></span> nharrison888@hotmail.com</p>
+            </div>
+            <div class="col-sm-6 slideanim ">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Nom" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Courriel" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                <br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="  btn btn-default pull-right" type="submit">Envoyer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---contact/fin---->
+    </div>
+
+    <!---------------------------------------------------Footer -------------------------------------------------------->
+    <footer class="container-fluid text-center">
+        <div class="row ">
+            <a href="#myPage" title="To Top">
+                <span style="color:rgba(239,88,9,1.00)" class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+        </div>
+        <div class="row">
+
+            <p> &copy; Nancy C. Harrison</p>
+
+            <div class="text-center center-block media">
+                <a href="https://www.facebook.com/French.Chocolaite/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+
+                <a href="https://www.linkedin.com/in/n-harrison-web-design"><i id="social-lk" class="fa fa-linkedin-square fa-3x social"></i></a>
+
+                <a href=""><i id="social-da" class="fa fa-google-plus-square fa-3x social"></i></a>
+
+                <a href=" http://french-chocolaite.deviantart.com/"><i id="social-em" class="fa fa-deviantart  fa-3x social"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!---------------------------------------------------Footer/fin -------------------------------------------------------->
+
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <!--  <script src="../../dist/js/bootstrap.min.js"></script> -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <!--   <script src="scripts/html5ext.js"  type="text/javascript"></script>-->
+
+    <!-- intro
+    ================================================== -->
+
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+
+        context.font = '150pt Freestyle Script';
+        context.fillStyle = 'white';
+        //context.fillText('Nancy C. Harrison', 100, 100);
+        context.fillText("Nancy C. Harrison", canvas.width / 2 - 460,
+            canvas.height / 2 + 100);
+        context.font = '65pt Josefin Sans';
+        // context.fillText('WEB DESIGNER', 290, 160);
+        context.fillText("WEB DESIGNER", canvas.width / 2 - 100,
+            canvas.height / 2 + 250);
+    </script>
+
+
+
+    <!--Scroll 
+    ================================================== -->
+
+
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+
+            $(window).scroll(function () {
+                $(".slideanim").each(function () {
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        })
+    </script>
+
+
+
+
+    <!--Image filter
+    ================================================== -->
+
+    <!-- Include jQuery & Filterizr -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="filterizr/jquery.filterizr.js"></script>
+    <script src="js/controls.js"></script>
+
+    <!-- Kick off Filterizr -->
+    <script type="text/javascript">
+        $(function () {
+            //Initialize filterizr with default options
+            $('.filtr-container').filterizr();
+        });
+    </script>
+
+
+    <!-- IMAGE MODAL
+    ================================================== -->
+
+
+
+
+
+    <!-- 
+    ================================================== -->
+
+
+
+
+
+    <script>
+        $(document).ready(function ($) {
+            $(window).load(function () {
+                $(".animated ").delay(500).fadeOut(1000, function () {
+                    $(".load_page").fadeOut(1000)
+                })
+            })
+        });
+    </script>
+
+    <!-- 
+    ================================================== -->
+    <script>
+        $(document).ready(function () {
+            $('.progress .progress-bar').css("width",
+                function () {
+                    return $(this).attr("aria-valuenow") + "%";
+                }
+            )
+        });
+    </script>
+
+
+
+</body>
+
+</html>
