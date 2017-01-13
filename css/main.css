@@ -1,0 +1,673 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {
+    background-color: #292929;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.container-fluid {
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+
+/*................................parallax..........................................*/
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 300px;
+    border-radius: 30px;
+}
+
+.bgimg-1 {
+    background-image: url(../img/212395-1017.jpg);
+}
+
+.bgimg-2 {
+    background-image: url(../img/candy_abstract-wide.jpg);
+}
+
+.bgimg-3 {
+    background-image: url(../img/212395-1017.jpg);
+}
+
+
+/*.................................header.............................................*/
+
+h1 {
+    /*font-family: 'Limelight', cursive;*/
+    text-align: center;
+    font-size: 5em;
+    margin-bottom: 50px;
+    -webkit-text-shadow: 2px 2px 2px #242424;
+    text-shadow: 2px 2px 2px #242424;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    margin-bottom: 5px;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    /*background: url(../assets/Strum-Away.jpg) no-repeat 50% 50%;*/
+    /*background-size: cover;*/
+    border-radius:30px;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    overflow: hidden;
+    border-bottom: 30px;
+}
+
+.hero-text {
+    position: absolute;
+    /*position: relative; is the standard, but chrome gets confused?*/
+    top: 50%;
+    left: 50%;
+    /*chrome fix, even old IE 11 works without this fix*/
+    transform: translateY(-50%) translateX(-50%);
+    /*add translateX(-50%); as a fix for chrome*/
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+
+}
+
+
+/*canvas {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+
+}*/
+
+.responsive {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 600px;
+}
+
+
+
+
+
+/*..............................NAV.......................................*/
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #5C2849;
+    border: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px !important;
+    letter-spacing: 2px;
+    -webkit-box-shadow: 0 1px 10px #242424;
+    box-shadow: 0 1px 10px #242424;
+}
+
+.navbar-brand {
+    /*position: absolute;*/
+    z-index: 4;
+    width: 30%;
+    top: 10;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #fff!important;
+}
+
+.navbar-nav li a:hover {
+    font-weight: bold;
+}
+
+.navbar-nav li.active a {
+    color: #000!important;
+    background-color: lightpink!important;
+    border-radius: 30px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar-brand {
+        font-size: 90%;
+    }
+    .navbar-brand {
+        top: 20%;
+        left: 0%;
+    }
+}
+
+
+/*.................................sections.............................................*/
+
+#section1,
+#section2,
+#section3,
+#section4,
+#section5 {
+    padding: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    color: #fff;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#section1 {
+    background-color: #5C2849;
+     border-radius: 30px;
+}
+
+
+
+#section2 { background-color: #EC4863;
+ border-radius: 30px;}
+
+#section3 {
+   background: rgba(203, 96, 179, 1);
+    background: -moz-linear-gradient(top, rgba(203, 96, 179, 1) 0%, rgba(203, 96, 179, 1) 8%, rgba(236, 72, 99, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(203, 96, 179, 1)), color-stop(8%, rgba(203, 96, 179, 1)), color-stop(100%, rgba(236, 72, 99, 1)));
+    background: -webkit-linear-gradient(top, rgba(203, 96, 179, 1) 0%, rgba(203, 96, 179, 1) 8%, rgba(236, 72, 99, 1) 100%);
+    background: -o-linear-gradient(top, rgba(203, 96, 179, 1) 0%, rgba(203, 96, 179, 1) 8%, rgba(236, 72, 99, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(203, 96, 179, 1) 0%, rgba(203, 96, 179, 1) 8%, rgba(236, 72, 99, 1) 100%);
+    background: linear-gradient(to bottom, rgba(203, 96, 179, 1) 0%, rgba(203, 96, 179, 1) 8%, rgba(236, 72, 99, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#ec4863', GradientType=0);
+     border-radius: 30px;
+    /* background-color: #A73E5C;*/
+}
+
+#section4 {  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff733f+1,a849a3+100 */
+    background: #ff733f;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #ff733f 1%, #a849a3 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ff733f 1%, #a849a3 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ff733f 1%, #a849a3 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ff733f', endColorstr='#a849a3', GradientType=0);
+     border-radius: 30px;
+    /* IE6-9 */}
+
+#section5 {
+    background-color: #FF733F;
+     border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+
+
+
+
+
+
+/*..................................à propos de moi ............................................*/
+
+.soustitre {
+    font-size: 2em;
+}
+
+.abtm {
+    font-size: 1.5em;
+}
+
+.flip-3d {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.back {
+    position: absolute;
+    left: 0%;
+    backface-visibility: hidden;
+    transform: perspective(600px) rotateY(180deg);
+    width: 300px;
+    height: 300px;
+    top: 0%;
+    transition: transform .3s ease-in-out 0s;
+    cursor: pointer;
+}
+
+.front {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transform: perspective(600px) rotateY(0deg);
+    width: 300px;
+    backface-visibility: hidden;
+    height: 300px;
+    transition: transform .3s ease-in-out 0s;
+    cursor: pointer;
+}
+
+.flip-3d:hover .front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip-3d:hover .back {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+
+/*..................................WHAT I CAN DO ............................................*/
+
+
+.service-block {
+   /*background-color: #EC4863;*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#db36a4+0,ec4863+100 */
+    background: #db36a4;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #db36a4 0%, #ec4863 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #db36a4 0%, #ec4863 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #db36a4 0%, #ec4863 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#db36a4', endColorstr='#ec4863', GradientType=0);
+    /* IE6-9 */
+    padding: 50px 20px;
+    color: #fff;
+    margin-bottom: 70px;
+    border-radius: 20px;
+    -webkit-box-shadow: 2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);
+    -moz-box-shadow: 2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);
+    box-shadow: 2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);
+}
+
+
+
+#services {
+    padding: 70px 0 100px;
+}
+
+#services .title {
+    padding-bottom: 125px;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+.service-block {
+    padding: 50px 20px;
+    color: #fff;
+    margin-bottom: 70px;
+    border-radius: 30px;
+    -webkit-box-shadow: 2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);
+    -moz-box-shadow: 2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);
+    box-shadow: 2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);
+}
+
+.service-icon {
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+
+/*..................................Skills ............................................*/
+
+.progress {
+    height: 35px;
+    background-color: transparent;
+    border-radius: 50px;
+}
+
+.progress .skill {
+    line-height: 35px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0 0 0 20px;
+    color: #fff;
+}
+
+.progress .skill .val {
+    float: right;
+    font-style: normal;
+    margin: 0 20px 0 0;
+}
+
+.progress-bar {
+    transition-duration: 10s;
+}
+
+
+/*....................................................*/
+
+.sparkle .progress-bar {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAABACAMAAADMI7KPAAACZFBMVEX////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////xG13JAAAAzHRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIiMkJSYnKCkqKywtLi8wMTIzNDU2Nzg5Ojs8PT4/QEFCQ0RFRkdISUpLTE1OT1BRUlNUVVZXWFlaW1xdXl9gYWJjZGVmZ2hpamtsbW5vcHFyc3R1dnd4eXp7fH1+f4CBgoOEhYaHiImKi4yNjo+QkZKTlJWWl5iZmpucnZ6foKGio6SlpqeoqaqrrK2ur7CxsrO0tba3uLm6u7y9vr/AwcLDxMXGx8jJytLua8SRAAASK0lEQVR42nXWWZMb12H28edsvQJoAINl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');
+    -webkit-animation: sparkle 1500ms linear infinite;
+    -moz-animation: sparkle 1500ms linear infinite;
+    -o-animation: sparkle 1500ms linear infinite;
+    animation: sparkle 1500ms linear infinite;
+}
+
+@-webkit-keyframes sparkle {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 -64px;
+    }
+}
+
+@-moz-keyframes sparkle {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 -64px;
+    }
+}
+
+@-o-keyframes sparkle {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 -64px;
+    }
+}
+
+@keyframes sparkle {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 -64px;
+    }
+}
+
+
+/*..................................PORTFOLIO..............................................*/
+
+figure.snip0016 {
+    color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    text-align: left;
+    border-radius: 15px;
+}
+
+figure.snip0016 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+figure.snip0016 img {
+    max-width: 100%;
+    opacity: 1;
+    width: 100%;
+    border-radius: 15px;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.snip0016 figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px 3em;
+    width: 100%;
+    height: 100%;
+}
+
+figure.snip0016 figcaption::before {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 100%;
+    border-left: 4px solid rgba(255, 255, 255, 0.8);
+    content: '';
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+
+figure.snip0016 h3,
+figure.snip0016 p {
+    margin: 0 0 5px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, -webkit-transform 0.35s, -moz-transform 0.35s, -o-transform 0.35s, transform 0.35s;
+}
+
+figure.snip0016 h3 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    text-transform: uppercase;
+    -webkit-transform: translate3d(30%, 0%, 0);
+    transform: translate3d(30%, 0%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+figure.snip0016 h3 span {
+    font-weight: 800;
+}
+
+figure.snip0016 p {
+    font-weight: 200;
+    -webkit-transform: translate3d(0%, 30%, 0);
+    transform: translate3d(0%, 30%, 0);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+figure.snip0016 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    color: #ffffff;
+}
+
+figure.snip0016:hover img {
+    opacity: 0.3;
+}
+
+figure.snip0016:hover figcaption h3 {
+    opacity: 1;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+figure.snip0016:hover figcaption p {
+    opacity: 0.9;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+
+figure.snip0016:hover figcaption::before {
+    background: rgba(255, 255, 255, 0);
+    left: 30px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+/*..........................................................CONTACT...................*/
+
+.contact {
+    padding: 10px 0 10px;
+}
+
+.glyph {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.form-control,
+.btn {
+    color: #fff;
+    background-color: transparent;
+    border: 3px solid #fff;
+}
+
+input,
+textarea {
+    color: #fff;
+}
+
+
+/*...................................FOOTER..............................................*/
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.glyphicon:hover {
+    color: #fff;
+}
+
+.media a {
+    color: #fff;
+}
+
+.social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.social {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+    border-top: 30px;
+}
+
+footer a {
+    color: #f5f5f5;
+}
+
+footer a:hover {
+    color: #777;
+    text-decoration: none;
+}
+
+
+/*...................................text/animation............................................*/
+
+.slideanim {
+    visibility: hidden;
+}
+
+.slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+}
