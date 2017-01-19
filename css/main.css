@@ -70,7 +70,7 @@ h1 {
     overflow: hidden;
     /*background: url(../assets/Strum-Away.jpg) no-repeat 50% 50%;*/
     /*background-size: cover;*/
-    border-radius:30px;
+    border-radius: 30px;
 }
 
 .hero-video {
@@ -100,7 +100,6 @@ h1 {
     margin: 0 auto;
     padding-left: 24px;
     padding-right: 24px;
-
 }
 
 
@@ -120,16 +119,13 @@ h1 {
 }
 
 
-
-
-
 /*..............................NAV.......................................*/
 
 .navbar {
     margin-bottom: 0;
     background-color: #5C2849;
     border: 0;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
     font-size: 16px !important;
     letter-spacing: 2px;
@@ -137,11 +133,8 @@ h1 {
     box-shadow: 0 1px 10px #242424;
 }
 
-.navbar-brand {
-    /*position: absolute;*/
-    z-index: 4;
-    width: 30%;
-    top: 10;
+.navbar-brand img {
+    margin-top: -30px;
 }
 
 .navbar li a,
@@ -185,23 +178,22 @@ h1 {
     box-sizing: border-box;
     width: 100%;
     color: #fff;
-
     margin-top: 2px;
     margin-bottom: 2px;
 }
 
 #section1 {
     background-color: #5C2849;
-     border-radius: 30px;
+    border-radius: 30px;
 }
 
-
-
-#section2 { background-color: #EC4863;
- border-radius: 30px;}
+#section2 {
+    background-color: #EC4863;
+    border-radius: 30px;
+}
 
 #section3 {
-   background: rgba(203, 96, 179, 1);
+    background: rgba(203, 96, 179, 1);
     background: -moz-linear-gradient(top, rgba(203, 96, 179, 1) 0%, rgba(203, 96, 179, 1) 8%, rgba(236, 72, 99, 1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(203, 96, 179, 1)), color-stop(8%, rgba(203, 96, 179, 1)), color-stop(100%, rgba(236, 72, 99, 1)));
     background: -webkit-linear-gradient(top, rgba(203, 96, 179, 1) 0%, rgba(203, 96, 179, 1) 8%, rgba(236, 72, 99, 1) 100%);
@@ -209,11 +201,12 @@ h1 {
     background: -ms-linear-gradient(top, rgba(203, 96, 179, 1) 0%, rgba(203, 96, 179, 1) 8%, rgba(236, 72, 99, 1) 100%);
     background: linear-gradient(to bottom, rgba(203, 96, 179, 1) 0%, rgba(203, 96, 179, 1) 8%, rgba(236, 72, 99, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#ec4863', GradientType=0);
-     border-radius: 30px;
+    border-radius: 30px;
     /* background-color: #A73E5C;*/
 }
 
-#section4 {  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff733f+1,a849a3+100 */
+#section4 {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff733f+1,a849a3+100 */
     background: #ff733f;
     /* Old browsers */
     background: -moz-linear-gradient(top, #ff733f 1%, #a849a3 100%);
@@ -223,19 +216,15 @@ h1 {
     background: linear-gradient(to bottom, #ff733f 1%, #a849a3 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ff733f', endColorstr='#a849a3', GradientType=0);
-     border-radius: 30px;
-    /* IE6-9 */}
+    border-radius: 30px;
+    /* IE6-9 */
+}
 
 #section5 {
     background-color: #FF733F;
-     border-top-left-radius: 30px;
+    border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
-
-
-
-
-
 
 
 /*..................................à propos de moi ............................................*/
@@ -290,9 +279,8 @@ h1 {
 
 /*..................................WHAT I CAN DO ............................................*/
 
-
 .service-block {
-   /*background-color: #EC4863;*/
+    /*background-color: #EC4863;*/
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#db36a4+0,ec4863+100 */
     background: #db36a4;
     /* Old browsers */
@@ -312,8 +300,6 @@ h1 {
     -moz-box-shadow: 2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);
     box-shadow: 2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);
 }
-
-
 
 #services {
     padding: 70px 0 100px;
