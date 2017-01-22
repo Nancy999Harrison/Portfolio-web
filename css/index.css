@@ -10,12 +10,12 @@
 /* Filter controls */
 
 .simplefilter li {
-    margin-left: 5px;
     color: #fff;
     cursor: pointer;
     display: inline-block;
     text-transform: uppercase;
-    padding: 2px 15px;
+    padding: 5px 20px;
+    margin-left: 10px;
     -webkit-text-shadow: 1px 1px 2px #242424;
     text-shadow: 1px 1px 2px #242424;
 }

@@ -71,7 +71,7 @@ h1 {
     overflow: hidden;
     /*background: url(../assets/Strum-Away.jpg) no-repeat 50% 50%;*/
     /*background-size: cover;*/
-    border-radius: 30px;
+    /*border-radius: 30px;*/
 }
 
 .hero-video {
@@ -135,11 +135,11 @@ h1 {
 }
 
 .navbar-brand img {
-    margin-top: -17px;
+    margin-top: -20px;
 }
 
 .navbar li a,
-.navbar .navbar-brand {
+.navbar {
     color: #fff!important;
 }
 
