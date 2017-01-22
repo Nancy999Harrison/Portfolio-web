@@ -4,13 +4,13 @@
 
 .filtr-item {
     /*padding: 0.2em;*/
-
 }
 
 
 /* Filter controls */
 
 .simplefilter li {
+    margin-left: 5px;
     color: #fff;
     cursor: pointer;
     display: inline-block;
