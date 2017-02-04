@@ -541,7 +541,7 @@ figure.snip0016:hover figcaption::before {
 }
 
 .form-control,
-.btn {
+.btn-default {
     color: #fff;
     background-color: transparent;
     border: 3px solid #fff;
