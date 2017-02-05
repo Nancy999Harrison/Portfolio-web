@@ -59,6 +59,12 @@ h1 {
     text-shadow: 2px 2px 2px #242424;
 }
 
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 90%;
+    }
+}
+
 .hero {
     position: relative;
     min-height: 100vh;
