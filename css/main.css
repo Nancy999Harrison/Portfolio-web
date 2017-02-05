@@ -33,9 +33,11 @@ body {
 }
 
 .bgimg-1 {
+    background-attachment: fixed;
     background-image: url(../img/212395-1017.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 30px;
 }
 
 .bgimg-2 {
@@ -301,12 +303,6 @@ h1 {
     -webkit-box-shadow: 2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);
     -moz-box-shadow: 2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);
     box-shadow: 2px 2px 5px rgba(44, 44, 44, .3), 13px 13px 0 rgba(256, 256, 256, .7);
-}
-
-@media only screen and (max-width: 780px) {
-    .service block {
-        width: 90%;
-    }
 }
 
 #services {
